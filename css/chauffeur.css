@@ -1,0 +1,102 @@
+:root {
+  --yellow: #f8e16c;
+  --green: #033a2c;
+  --deepgreen: #156064;
+  --orange: #fb8f67;
+  --pink: #ffc2b4;
+  --white: #fff;
+  --black: #0000009f;
+  --background: #ffffffe3;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+}
+
+header .empty-content {
+  width: 100%;
+  padding: 25px;
+  background-color: var(--yellow);
+}
+header .header-items {
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: -25px;
+  background-color: var(--deepgreen);
+}
+header .header-items div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+header .header-items div h3 {
+  color: var(--white);
+}
+header .header-items div h3 span {
+  color: var(--yellow);
+}
+header .header-items div i {
+  padding: 10px;
+  color: var(--deepgreen);
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+section nav {
+  height: 70vh;
+  padding: 20px;
+  margin-top: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--deepgreen);
+}
+section nav .nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section nav .nav-content .dashboard {
+  padding: 10px 20px;
+  color: var(--deepgreen);
+  background-color: var(--yellow);
+}
+section nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+*,
+::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background-color: var(--yellow);
+}
+button a {
+  text-decoration: none;
+  color: var(--deepgreen);
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=chauffeur.css.map */
