@@ -2,6 +2,11 @@
 
 section{
     .dashboard-content{
+        h2{
+            padding: 10px;
+            margin-top: 20px;
+            background-color: var(--gray);
+        }
         .dashboard-immatricule{
             padding: 20px;
             margin-top: 20px;
@@ -29,23 +34,32 @@ section{
                 a{
                     padding: 8px 12px;
                     text-decoration: none;
-                    color: var(--yellow);
+                    color: var(--white);
                     border-radius: 5px;
-                    background-color: var(--deepgreen);
+                    background: linear-gradient(45deg, #156064, #f8e16c);
                 }
             }
         }
     }
 
     .useful{
+        width: 60%;
+        margin: auto;
+        h3{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
         div{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            margin-top: 15px;
             gap: 10px;
             h4{
-                padding: 8px;
+                padding: 12px;
                 border-radius: 50%;
-                background-color: linear-gradient(to right, #156064, #f8e16c);
+                color: var(--white);
+                background: linear-gradient(45deg, #156064, #f8e16c);
             }
         }
     }

@@ -7,7 +7,7 @@
   --white: #fff;
   --black: #0000009f;
   --background: #ffffffe3;
-  --gray: #f8f8f8;
+  --gray: #f8f8ed;
 }
 
 body {
@@ -64,11 +64,6 @@ section nav {
   border-top-right-radius: 20px;
   background-color: var(--deepgreen);
 }
-section nav .nav-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 section nav .nav-content .dashboard, section nav .nav-content .profile {
   margin-top: 10px;
   padding: 10px 20px;
@@ -123,6 +118,11 @@ button a {
   font-family: "Montserrat", sans-serif;
 }
 
+section .dashboard-content h2 {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--gray);
+}
 section .dashboard-content .dashboard-immatricule {
   padding: 20px;
   margin-top: 20px;
@@ -151,17 +151,28 @@ section .dashboard-content .dashboard-immatricule div input {
 section .dashboard-content .dashboard-immatricule div a {
   padding: 8px 12px;
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--white);
   border-radius: 5px;
-  background-color: var(--deepgreen);
+  background: linear-gradient(45deg, #156064, #f8e16c);
+}
+section .useful {
+  width: 60%;
+  margin: auto;
+}
+section .useful h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 section .useful div {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
   gap: 10px;
 }
 section .useful div h4 {
-  padding: 8px;
+  padding: 12px;
   border-radius: 50%;
-  background-color: linear-gradient(to right, #156064, #f8e16c);
+  color: var(--white);
+  background: linear-gradient(45deg, #156064, #f8e16c);
 }/*# sourceMappingURL=chauffeur.css.map */
