@@ -47,12 +47,13 @@ header{
     }
 }
 
+/**********************************************/
 section{
     display: grid;
     grid-template-columns: 20% auto;
     nav{
-        height: 70vh;
-        padding: 20px;
+        height: 75vh;
+        padding: 20px ;
         margin-top: 20px;
         border-top-right-radius: 20px;
         background-color: var(--deepgreen);
@@ -61,14 +62,36 @@ section{
             flex-direction: column;
             gap: 20px;
             .dashboard{
+                margin-top: 10px;
                 padding: 10px 20px;
                 color: var(--deepgreen);
+                text-align: center;
+                font-weight: bolder;
                 background-color: var(--yellow);
+                a{
+                    color: var(--deepgreen);
+                    text-decoration: none;
+                }
+            }
+            .profile{
+                @extend .dashboard;
+                background: none;
+                border: 1px solid var(--yellow);
+                a{
+                    color: var(--yellow);
+                }
             }
         }
-        a{
-            color: var(--white);
-            text-decoration: none;
-        }
+    }
+}
+
+/*********************************************/
+footer{
+    .footer-content{
+        padding: 15px;
+        text-align: center;
+        color: var(--white);
+        
+        background-color: var(--deepgreen);
     }
 }
