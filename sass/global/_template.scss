@@ -15,7 +15,7 @@ header{
         background-color: var(--yellow);
     }
     .header-items{
-        width: 80%;
+        width: 90%;
         padding: 15px;
         display: flex;
         flex-direction: row;
@@ -54,7 +54,7 @@ section{
     nav{
         height: 75vh;
         padding: 20px ;
-        margin-top: 20px;
+        margin-top: 15px;
         border-top-right-radius: 20px;
         background-color: var(--deepgreen);
         .nav-content{
@@ -83,6 +83,7 @@ section{
             }
         }
     }
+
 }
 
 /*********************************************/
@@ -91,7 +92,8 @@ footer{
         padding: 15px;
         text-align: center;
         color: var(--white);
-        
+        margin-top: 8px;
+        font-weight: bolder;
         background-color: var(--deepgreen);
     }
 }
