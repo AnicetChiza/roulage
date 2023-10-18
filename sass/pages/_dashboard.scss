@@ -2,7 +2,7 @@
 
 section{
     .dashboard-content{
-        h2{
+        h3{
             padding: 10px;
             margin-top: 20px;
             background-color: var(--gray);
@@ -45,15 +45,16 @@ section{
     .useful{
         width: 60%;
         margin: auto;
-        h3{
-            margin-top: 15px;
-            margin-bottom: 15px;
+        margin-top: 30px;
+        h4{
+            margin-top: 8px;
+            margin-bottom: 10px;
         }
         div{
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 5px;
             gap: 10px;
             h4{
                 padding: 12px;

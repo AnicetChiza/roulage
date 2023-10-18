@@ -51,36 +51,34 @@ header{
 section{
     display: grid;
     grid-template-columns: 20% auto;
-    nav{
-        //height: 75vh;
-        padding: 20px ;
-        margin-top: 15px;
-        border-top-right-radius: 15px;
-        background-color: var(--deepgreen);
-        .nav-content{
-            .dashboard{
-                margin-top: 10px;
-                padding: 10px 20px;
+}
+nav{
+    padding: 20px ;
+    margin-top: 20px;
+    border-top-right-radius: 15px;
+    background-color: var(--deepgreen);
+    
+        .dashboard{
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: var(--deepgreen);
+            text-align: center;
+            font-weight: bolder;
+            background-color: var(--yellow);
+            a{
                 color: var(--deepgreen);
-                text-align: center;
-                font-weight: bolder;
-                background-color: var(--yellow);
-                a{
-                    color: var(--deepgreen);
-                    text-decoration: none;
-                }
-            }
-            .profile{
-                @extend .dashboard;
-                background: none;
-                border: 1px solid var(--yellow);
-                a{
-                    color: var(--yellow);
-                }
+                text-decoration: none;
             }
         }
-    }
-
+        .profile{
+            @extend .dashboard;
+            background: none;
+            border: 1px solid var(--yellow);
+            a{
+                color: var(--yellow);
+            }
+        }
+    
 }
 
 /*********************************************/

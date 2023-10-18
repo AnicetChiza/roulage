@@ -57,13 +57,14 @@ section {
   display: grid;
   grid-template-columns: 20% auto;
 }
-section nav {
+
+nav {
   padding: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
   border-top-right-radius: 15px;
   background-color: var(--deepgreen);
 }
-section nav .nav-content .dashboard, section nav .nav-content .profile {
+nav .dashboard, nav .profile {
   margin-top: 10px;
   padding: 10px 20px;
   color: var(--deepgreen);
@@ -71,15 +72,15 @@ section nav .nav-content .dashboard, section nav .nav-content .profile {
   font-weight: bolder;
   background-color: var(--yellow);
 }
-section nav .nav-content .dashboard a, section nav .nav-content .profile a {
+nav .dashboard a, nav .profile a {
   color: var(--deepgreen);
   text-decoration: none;
 }
-section nav .nav-content .profile {
+nav .profile {
   background: none;
   border: 1px solid var(--yellow);
 }
-section nav .nav-content .profile a {
+nav .profile a {
   color: var(--yellow);
 }
 
@@ -122,7 +123,7 @@ button a {
   font-family: "Montserrat", sans-serif;
 }
 
-section .dashboard-content h2 {
+section .dashboard-content h3 {
   padding: 10px;
   margin-top: 20px;
   background-color: var(--gray);
@@ -162,16 +163,17 @@ section .dashboard-content .dashboard-immatricule div a {
 section .useful {
   width: 60%;
   margin: auto;
+  margin-top: 30px;
 }
-section .useful h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+section .useful h4 {
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 section .useful div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 5px;
   gap: 10px;
 }
 section .useful div h4 {
