@@ -52,10 +52,10 @@ section{
     display: grid;
     grid-template-columns: 20% auto;
     nav{
-        height: 75vh;
+        //height: 75vh;
         padding: 20px ;
         margin-top: 15px;
-        border-top-right-radius: 20px;
+        border-top-right-radius: 15px;
         background-color: var(--deepgreen);
         .nav-content{
             .dashboard{
@@ -85,6 +85,9 @@ section{
 
 /*********************************************/
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     .footer-content{
         padding: 15px;
         text-align: center;
