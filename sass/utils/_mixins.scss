@@ -1,0 +1,6 @@
+//aligner les elements horizontalement
+
+@mixin display-flex{
+    display: flex;
+    flex-direction: row;
+}

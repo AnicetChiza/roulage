@@ -8,16 +8,78 @@
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Maven+Pro&family=Montserrat&family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
 <body>
-    
+    <header>
+        <div class="empty-content">
 
-    <i class="fa-solid fa-eye"></i>
-    <i class="fa-solid fa-eye-slash"></i>
+        </div>
+        <div class="header-items">
+            <div class="header-title">
+                <i class="fa-solid fa-feather"></i>
+                <h3><span>Salama</span> Control</h3>
+            </div>
+            <div>
+                <button>
+                    <a href="#">Se déconnecter</a>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <i class="fa-regular fa-eye"></i>
-    <i class="fa-regular fa-eye-slash"></i>
+    <section>
+        <nav>
+            <div class="dashboard">
+                <a href="#">Dashboard</a>
+            </div>
+            <div class="profile">
+                <a href="#">Documents</a>
+            </div>
+            <div class="profile">
+                <a href="#">Profile</a>
+            </div>
+        </nav>
+
+        <div class="profile-content">
+            <h3>Mon profil</h3>
+
+            <div class="profile-identite">
+                <div class="profil">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h4>Gabriel BUHENDWA</h4>
+                        <p>Affecté à la zone C3</p>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Entrer votre adress email">
+                    </div>
+                    <div class="modifier_password">
+                        <h4>Modifier votre mot de passe</h4>
+                        <div>
+                            <label for="mot_de_passe">Mot de passe actuel</label>
+                            <input type="password" name="password" placeholder="Entrer votre mot de passe">
+                        </div>
+                    </div>
+                    <div class="nouveau_password">
+                        <label for="mot_de_passe">Nouveau mot de passe</label>
+                        <div class="nouveau_password-content">
+                            <input type="password" name="password" placeholder="Entrer le nouveau mot de passe">
+                            <a href="#">Enregistrer</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 - Salama Control</p>
+        </div>
+    </footer>    
 </body>
 </html>
