@@ -1,0 +1,36 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+@include u.breakpoint(tablet){
+    @media screen and (max-width: 700px){
+        section{
+            .profile-content{
+                .profile-identite{
+                    form{
+                        .nouveau_password{
+                            .nouveau_password_content{
+                                display: grid;
+                                grid-template-columns: auto;
+                                gap: 10px;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        section{
+            .profile-content{
+                .profile-content-item{
+                    padding: 15px;
+                }
+                .profile-identite{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

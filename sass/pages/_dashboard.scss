@@ -5,9 +5,7 @@ section{
     .dashboard-content{
         height: 75vh;
         h3{
-            padding: 10px;
-            margin-top: 20px;
-            background-color: var(--gray);
+            @include titre-de-page;
         }
         .dashboard-immatricule{
             padding: 20px;

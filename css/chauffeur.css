@@ -37,12 +37,12 @@ header .header-items div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
-header .header-items div h3 {
+header .header-items div h4 {
   color: var(--white);
 }
-header .header-items div h3 span {
+header .header-items div h4 span {
   color: var(--yellow);
 }
 header .header-items div i {
@@ -95,6 +95,18 @@ footer .footer-content {
   background-color: var(--deepgreen);
 }
 
+/************************************************/
+/***************MEDIA QUERY**************/
+/************************************************/
+@media (max-width: 978px) {
+  section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  nav {
+    display: none;
+  }
+}
 *,
 ::after, ::before {
   margin: 0;
@@ -124,7 +136,8 @@ section .dashboard-content {
 }
 section .dashboard-content h3 {
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+  text-align: center;
   background-color: var(--gray);
 }
 section .dashboard-content .dashboard-immatricule {
@@ -268,6 +281,7 @@ section .profile-content {
 section .profile-content h3 {
   padding: 10px;
   margin-top: 10px;
+  text-align: center;
   background-color: var(--gray);
 }
 section .profile-content .profile-identite {
@@ -324,12 +338,84 @@ section .profile-content .profile-identite form .modifier_password div input, se
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 0px 2px 0px var(--deepgreen);
 }
-section .profile-content .profile-identite form .nouveau_password a {
+section .profile-content .profile-identite form .nouveau_password .nouveau_password_content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+section .profile-content .profile-identite form .nouveau_password .nouveau_password_content a {
   padding: 10px 15px;
   border-radius: 5px;
   color: var(--white);
-  width: -moz-fit-content;
-  width: fit-content;
   text-decoration: none;
+  text-align: center;
   background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
+}
+
+@media screen and (max-width: 768px) and (max-width: 720px) {
+  section .dashboard-content {
+    height: auto;
+  }
+  section .dashboard-content .dashboard-immatricule div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section .dashboard-content .dashboard-immatricule div input, section .dashboard-content .dashboard-immatricule div a {
+    width: 50%;
+    margin: auto;
+  }
+  section .useful {
+    width: 100%;
+    padding: 15px;
+    margin-top: auto;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 491px) {
+  section .dashboard-content .dashboard-immatricule p {
+    font-size: 16px;
+  }
+  section .dashboard-content .dashboard-immatricule div input, section .dashboard-content .dashboard-immatricule div a {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  section .document-content {
+    display: flex;
+    flex-direction: column;
+  }
+  section .document-items {
+    margin: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  section .document-content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 415px) {
+  section .document-content .document-items .items {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: stretch;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 700px) {
+  section .profile-content .profile-identite form .nouveau_password .nouveau_password_content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  section .profile-content .profile-content-item {
+    padding: 15px;
+  }
+  section .profile-content .profile-identite {
+    width: 100%;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=chauffeur.css.map */
