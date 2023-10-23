@@ -52,16 +52,12 @@ section{
                 @include display-flex;
                 justify-content: end;
                 .right{
-                    padding: 5px 8px;
                     color: var(--green);
-                    border-radius: 4px;
-                    box-shadow: 0px 0px 2px 0px var(--black);
+                    @include icon-checkbox;
                 }
                 .incorrect{
-                    padding: 5px 8px;
                     color: var(--red);
-                    border-radius: 4px;
-                    box-shadow: 0px 0px 2px 0px var(--black);
+                    @include icon-checkbox;
                 }
             }
             .files{
