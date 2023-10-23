@@ -43,6 +43,39 @@ header{
                 background-color: var(--yellow);
             } 
         }
+        .menu{
+            display: none;
+            .menu-container{
+                position: absolute;
+                top: 95px;
+                right: 10px;
+                width: 60%;
+                height: 50vh;
+                margin: auto;
+                transition: 1s ease-in-out;
+                margin-right: 200%;
+                background-color: var(--deepgreen);
+                border-top-left-radius: 10px;
+                @include display-column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                ul{
+                    
+                    li{
+                        list-style: none;
+                        margin-bottom: 25px;
+                        color: var(--deepgreen);
+                        padding: 8px 12px;
+                        border: 1px solid var(--yellow);
+                        a{
+                            color: var(--white);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -103,5 +136,30 @@ footer{
     }
     nav{
         display: none;
+    }
+    header{
+        .header-items{
+            .button{
+                display: none;
+            }
+            .menu{
+                display: initial;
+                .menu-icons .icon{
+                    display: block;
+                }
+                .menu-icons .exit{
+                    display: none;
+                }
+                .menu-mobile .icon{
+                    display: none;
+                }
+                .menu-mobile .exit{
+                    display: initial;
+                }
+                .menu-mobile{
+                    margin-right: 0;
+                }
+            }
+        }
     }
 }
