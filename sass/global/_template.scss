@@ -146,9 +146,11 @@ footer{
                 display: initial;
                 .menu-icons .icon{
                     display: block;
+                    cursor: pointer;
                 }
                 .menu-icons .exit{
                     display: none;
+                    cursor: pointer;
                 }
                 .menu-mobile .icon{
                     display: none;
