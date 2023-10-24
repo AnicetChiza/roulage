@@ -424,17 +424,17 @@ section .formulaire h3 {
 }
 
 section .formulaire form div {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 section .formulaire form div input {
   border: none;
   outline: none;
   padding: 8px 12px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 1px 0px var(--black);
+  box-shadow: 0px 0px 2px 0px var(--deepgreen);
 }
 
 section .formulaire form div button {
@@ -505,6 +505,25 @@ section .formulaire form div button a {
     justify-content: stretch;
     text-align: center;
     gap: 10px;
+  }
+}
+@media (max-width: 978px) {
+  section .formulaire {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  section .formulaire {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    padding: 20px;
+  }
+  section .formulaire {
+    width: 100%;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 700px) {

@@ -7,9 +7,6 @@
     }
 }
 @include u.breakpoint(tablet){
-    header .title{
-        width: 90%;
-    }
     section .formulaire{
         width: 80%;
     }
