@@ -404,6 +404,57 @@ section .profile-content .profile-identite form .nouveau_password .nouveau_passw
   background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
 }
 
+section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .formulaire {
+  width: 45%;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0px 0px 3px 0px var(--black);
+}
+section .formulaire h3 {
+  text-align: center;
+  color: var(--deepgreen);
+}
+
+section .formulaire form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+section .formulaire form div input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 1px 0px var(--black);
+}
+
+section .formulaire form div button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: var(--deepgreen);
+}
+section .formulaire form div button a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+
+.forgottenpassword {
+  color: var(--deepgreen);
+}
+
 @media screen and (max-width: 768px) and (max-width: 720px) {
   section .dashboard-content {
     height: auto;
