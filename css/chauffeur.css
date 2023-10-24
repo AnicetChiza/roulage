@@ -225,23 +225,23 @@ section .dashboard-content .dashboard-immatricule div a {
   border-radius: 5px;
   background: linear-gradient(45deg, #156064, #f8e16c);
 }
-section .useful {
+section .utilisation-content {
   width: 60%;
   margin: auto;
   margin-top: 30px;
 }
-section .useful h4 {
+section .utilisation-content h4 {
   margin-top: 8px;
   margin-bottom: 10px;
 }
-section .useful div {
+section .utilisation-content div {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 5px;
   gap: 10px;
 }
-section .useful div h4 {
+section .utilisation-content div h4 {
   padding: 12px;
   border-radius: 50%;
   color: var(--white);
@@ -468,7 +468,7 @@ section .formulaire form div button a {
     width: 50%;
     margin: auto;
   }
-  section .useful {
+  section .utilisation-content {
     width: 100%;
     padding: 15px;
     margin-top: auto;
