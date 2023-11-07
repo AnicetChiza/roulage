@@ -20,6 +20,7 @@ section{
                 @include display-flex;
                 gap: 10px;
                 align-items: end;
+                -webkit-column-gap: 10px;
                 h4{
                     margin-bottom: 5px;
                 }
@@ -35,6 +36,7 @@ section{
                     @include display-column;
                     gap: 5px;
                     margin-top: 12px;
+                    -webkit-column-gap: 5px;
                     input{
                         @include input-properties;
                     }
@@ -45,6 +47,7 @@ section{
                         @include display-column;
                         gap: 5px;
                         margin-top: 10px;
+                        -webkit-column-gap: 5px;
                         input{
                             @include input-properties;
                         }

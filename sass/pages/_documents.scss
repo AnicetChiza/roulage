@@ -10,6 +10,7 @@ section{
         margin: auto;
         padding: 15px;
         @include display-flex;
+        -webkit-column-gap: 20px;
         .profile {  
             text-align: center;
             i{
