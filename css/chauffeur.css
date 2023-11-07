@@ -17,6 +17,80 @@ body {
   background-color: var(--background);
 }
 
+header .empty-content {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--yellow);
+}
+header .header-content {
+  width: 90%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--deepgreen);
+}
+header .header-content .logo {
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+}
+header .header-content .logo i {
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--deepgreen);
+  background-color: var(--yellow);
+}
+header .header-content .logo h4 {
+  color: var(--white);
+}
+header .header-content .logo h4 span {
+  color: var(--yellow);
+}
+header .header-content .menu {
+  display: none;
+}
+header .header-content .menu .menu-icons {
+  color: var(--deepgreen);
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+header .header-content .menu .menu-container {
+  position: absolute;
+  top: 70px;
+  right: 1px;
+  width: 100%;
+  transition: 1s;
+  margin-top: -200%;
+  background-color: var(--deepgreen);
+  display: flex;
+  flex-direction: row;
+}
+header .header-content .menu .menu-container ul {
+  width: 100%;
+}
+header .header-content .menu .menu-container ul li {
+  list-style: none;
+  color: var(--deepgreen);
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--yellow);
+}
+header .header-content .menu .menu-container ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+header .header-content .menu .menu-container ul li a:hover {
+  color: var(--yellow);
+}
+
 /**********************************************/
 section {
   display: grid;
