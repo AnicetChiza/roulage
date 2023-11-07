@@ -3,10 +3,12 @@
 
 section{
     .document-content{
-        width: 70%;
+        width: 90%;
+        height: 80vh;
+        overflow: auto;
         gap: 20px;
         margin: auto;
-        margin-top: 15px;
+        padding: 15px;
         @include display-flex;
         .profile {  
             text-align: center;
