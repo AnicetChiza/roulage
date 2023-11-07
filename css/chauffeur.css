@@ -17,72 +17,6 @@ body {
   background-color: var(--background);
 }
 
-header .empty-content {
-  width: 100%;
-  padding: 25px;
-  background-color: var(--yellow);
-}
-header .header-items {
-  width: 90%;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  margin-top: -25px;
-  background-color: var(--deepgreen);
-}
-header .header-items div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 4px;
-}
-header .header-items div h4 {
-  color: var(--white);
-}
-header .header-items div h4 span {
-  color: var(--yellow);
-}
-header .header-items div i {
-  padding: 10px;
-  color: var(--deepgreen);
-  border-radius: 50%;
-  background-color: var(--yellow);
-}
-header .header-items .menu {
-  display: none;
-}
-header .header-items .menu .menu-container {
-  position: absolute;
-  top: 95px;
-  right: 10px;
-  width: 60%;
-  height: 50vh;
-  margin: auto;
-  transition: 1s ease-in-out;
-  margin-right: 200%;
-  background-color: var(--deepgreen);
-  border-top-left-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-header .header-items .menu .menu-container ul li {
-  list-style: none;
-  margin-bottom: 25px;
-  color: var(--deepgreen);
-  padding: 8px 12px;
-  border: 1px solid var(--yellow);
-}
-header .header-items .menu .menu-container ul li a {
-  color: var(--white);
-  text-decoration: none;
-}
-
 /**********************************************/
 section {
   display: grid;
@@ -136,29 +70,6 @@ footer .footer-content {
   }
   nav {
     display: none;
-  }
-  header .header-items .button {
-    display: none;
-  }
-  header .header-items .menu {
-    display: initial;
-  }
-  header .header-items .menu .menu-icons .icon {
-    display: block;
-    cursor: pointer;
-  }
-  header .header-items .menu .menu-icons .exit {
-    display: none;
-    cursor: pointer;
-  }
-  header .header-items .menu .menu-mobile .icon {
-    display: none;
-  }
-  header .header-items .menu .menu-mobile .exit {
-    display: initial;
-  }
-  header .header-items .menu .menu-mobile {
-    margin-right: 0;
   }
 }
 *,

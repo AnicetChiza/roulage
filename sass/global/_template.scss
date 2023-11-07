@@ -9,75 +9,7 @@ body{
     background-color: var(--background);
 }
 
-header{
-    .empty-content{
-        width: 100%;
-        padding: 25px;
-        background-color: var(--yellow);
-    }
-    .header-items{
-        width: 90%;
-        padding: 15px;
-        @include display-flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        margin-top: -25px;
-        background-color: var(--deepgreen);
 
-        div{
-            @include display-flex;
-            align-items: center;
-            gap: 4px;
-
-            h4{
-                color: var(--white);
-                span{
-                    color: var(--yellow);
-                }
-            }
-            i{
-                padding: 10px;
-                color: var(--deepgreen);
-                border-radius: 50%;
-                background-color: var(--yellow);
-            } 
-        }
-        .menu{
-            display: none;
-            .menu-container{
-                position: absolute;
-                top: 95px;
-                right: 10px;
-                width: 60%;
-                height: 50vh;
-                margin: auto;
-                transition: 1s ease-in-out;
-                margin-right: 200%;
-                background-color: var(--deepgreen);
-                border-top-left-radius: 10px;
-                @include display-column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                ul{
-                    
-                    li{
-                        list-style: none;
-                        margin-bottom: 25px;
-                        color: var(--deepgreen);
-                        padding: 8px 12px;
-                        border: 1px solid var(--yellow);
-                        a{
-                            color: var(--white);
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 /**********************************************/
 section{
@@ -137,31 +69,5 @@ footer{
     nav{
         display: none;
     }
-    header{
-        .header-items{
-            .button{
-                display: none;
-            }
-            .menu{
-                display: initial;
-                .menu-icons .icon{
-                    display: block;
-                    cursor: pointer;
-                }
-                .menu-icons .exit{
-                    display: none;
-                    cursor: pointer;
-                }
-                .menu-mobile .icon{
-                    display: none;
-                }
-                .menu-mobile .exit{
-                    display: initial;
-                }
-                .menu-mobile{
-                    margin-right: 0;
-                }
-            }
-        }
-    }
+    
 }
